@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
-<script type='text/javascript' src='src/js/jquery.mousewheel.min.js'></script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Spotifu</title>
 </head>
@@ -64,7 +62,13 @@
             <h1>Inicio</h1>
             <div class="main__lists">
                 <div class="list">
-                    <h2>Top playlists</h2>
+                    <div class="list__header">
+                        <h2>Top playlists</h2>
+                        <div class="list__header__arrows">
+                            <img id="left-arrow" src="./assets/left arrow.svg" alt="">
+                            <img id="right-arrow" class="arrow--active" src="./assets/right arrow.svg" alt="">
+                        </div>
+                    </div>
                     <div id="playlsit"class="list__playlists">
                         <div class="playlist">
                             <div class="playlist__cover">
@@ -213,10 +217,195 @@
                     </div>
                 </div>
                 <div class="list">
-                    <h2>Escuchado recientemente</h2>
+                    <div class="list__header">
+                        <h2>Escuchado recientemente</h2>
+                        <div class="list__header__arrows">
+                            <img id="left-arrow" src="./assets/left arrow.svg" alt="">
+                            <img id="right-arrow" class="arrow--active" src="./assets/right arrow.svg" alt="">
+                        </div>
+                    </div>
                     <div class="list__playlists">
                         <div class="playlist">
                             <div class="playlist__cover">
+                                <img src="./assets/playlists/labestia.png" alt="">
+                            </div>
+                            <p class="playlist__title">La Bestia</p>
+                            <p class="playlist__description">Top Metal releases + snippet</p>
+                            <p class="playlist__followers">102,046 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalnuestro.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal del Nuestro</p>
+                            <p class="playlist__description">Metal hecho en Iberoamérica.</p>
+                            <p class="playlist__followers">190,557 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/kickass.png" alt="">
+                            </div>
+                            <p class="playlist__title">Kickass Metal</p>
+                            <p class="playlist__description">Lo mejor del Metal y flow actual.</p>
+                            <p class="playlist__followers">1,107,648 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/oldschoolmetal.png" alt="">
+                            </div>
+                            <p class="playlist__title">Old School Metal</p>
+                            <p class="playlist__description">¡Quiero Metal, dame Metal!</p>
+                            <p class="playlist__followers">175,315 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalessentials.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal Essentials</p>
+                            <p class="playlist__description">Better to start with the essentials.</p>
+                            <p class="playlist__followers">257,277 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalempire.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal Empire</p>
+                            <p class="playlist__description">Metal tracks all the way from the birth of Metal.</p>
+                            <p class="playlist__followers">36,593 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/heavymetal.png" alt="">
+                            </div>
+                            <p class="playlist__title">Heavy Metal</p>
+                            <p class="playlist__description">Heavy Metal forever. From classics.</p>
+                            <p class="playlist__followers">120,721 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/labestia.png" alt="">
+                            </div>
+                            <p class="playlist__title">La Bestia</p>
+                            <p class="playlist__description">Top Metal releases + snippet</p>
+                            <p class="playlist__followers">102,046 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalnuestro.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal del Nuestro</p>
+                            <p class="playlist__description">Metal hecho en Iberoamérica.</p>
+                            <p class="playlist__followers">190,557 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/kickass.png" alt="">
+                            </div>
+                            <p class="playlist__title">Kickass Metal</p>
+                            <p class="playlist__description">Lo mejor del Metal y flow actual.</p>
+                            <p class="playlist__followers">1,107,648 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/oldschoolmetal.png" alt="">
+                            </div>
+                            <p class="playlist__title">Old School Metal</p>
+                            <p class="playlist__description">¡Quiero Metal, dame Metal!</p>
+                            <p class="playlist__followers">175,315 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalessentials.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal Essentials</p>
+                            <p class="playlist__description">Better to start with the essentials.</p>
+                            <p class="playlist__followers">257,277 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalempire.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal Empire</p>
+                            <p class="playlist__description">Metal tracks all the way from the birth of Metal.</p>
+                            <p class="playlist__followers">36,593 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/heavymetal.png" alt="">
+                            </div>
+                            <p class="playlist__title">Heavy Metal</p>
+                            <p class="playlist__description">Heavy Metal forever. From classics.</p>
+                            <p class="playlist__followers">120,721 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/labestia.png" alt="">
+                            </div>
+                            <p class="playlist__title">La Bestia</p>
+                            <p class="playlist__description">Top Metal releases + snippet</p>
+                            <p class="playlist__followers">102,046 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalnuestro.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal del Nuestro</p>
+                            <p class="playlist__description">Metal hecho en Iberoamérica.</p>
+                            <p class="playlist__followers">190,557 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/kickass.png" alt="">
+                            </div>
+                            <p class="playlist__title">Kickass Metal</p>
+                            <p class="playlist__description">Lo mejor del Metal y flow actual.</p>
+                            <p class="playlist__followers">1,107,648 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/oldschoolmetal.png" alt="">
+                            </div>
+                            <p class="playlist__title">Old School Metal</p>
+                            <p class="playlist__description">¡Quiero Metal, dame Metal!</p>
+                            <p class="playlist__followers">175,315 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalessentials.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal Essentials</p>
+                            <p class="playlist__description">Better to start with the essentials.</p>
+                            <p class="playlist__followers">257,277 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalempire.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal Empire</p>
+                            <p class="playlist__description">Metal tracks all the way from the birth of Metal.</p>
+                            <p class="playlist__followers">36,593 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/heavymetal.png" alt="">
+                            </div>
+                            <p class="playlist__title">Heavy Metal</p>
+                            <p class="playlist__description">Heavy Metal forever. From classics.</p>
+                            <p class="playlist__followers">120,721 SEGUIDORES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="list__header">
+                        <h2>Top playlists</h2>
+                        <div class="list__header__arrows">
+                            <img id="left-arrow" src="./assets/left arrow.svg" alt="">
+                            <img id="right-arrow" class="arrow--active" src="./assets/right arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div id="playlsit"class="list__playlists">
+                        <div class="playlist">
+                            <div class="playlist__cover">
                                 <img src="./assets/playlists/mansion-reggaeton.jpg" alt="">
                             </div>
                             <p class="playlist__title">Mansión Reggaeton</p>
@@ -357,6 +546,185 @@
                             </div>
                             <p class="playlist__title">Bachatéame</p>
                             <p class="playlist__description">¡Esto sí es Bachata! Natti Natasha & Romeo</p>
+                            <p class="playlist__followers">120,721 SEGUIDORES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="list__header">
+                        <h2>Escuchado recientemente</h2>
+                        <div class="list__header__arrows">
+                            <img id="left-arrow" src="./assets/left arrow.svg" alt="">
+                            <img id="right-arrow" class="arrow--active" src="./assets/right arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list__playlists">
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/labestia.png" alt="">
+                            </div>
+                            <p class="playlist__title">La Bestia</p>
+                            <p class="playlist__description">Top Metal releases + snippet</p>
+                            <p class="playlist__followers">102,046 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalnuestro.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal del Nuestro</p>
+                            <p class="playlist__description">Metal hecho en Iberoamérica.</p>
+                            <p class="playlist__followers">190,557 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/kickass.png" alt="">
+                            </div>
+                            <p class="playlist__title">Kickass Metal</p>
+                            <p class="playlist__description">Lo mejor del Metal y flow actual.</p>
+                            <p class="playlist__followers">1,107,648 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/oldschoolmetal.png" alt="">
+                            </div>
+                            <p class="playlist__title">Old School Metal</p>
+                            <p class="playlist__description">¡Quiero Metal, dame Metal!</p>
+                            <p class="playlist__followers">175,315 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalessentials.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal Essentials</p>
+                            <p class="playlist__description">Better to start with the essentials.</p>
+                            <p class="playlist__followers">257,277 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalempire.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal Empire</p>
+                            <p class="playlist__description">Metal tracks all the way from the birth of Metal.</p>
+                            <p class="playlist__followers">36,593 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/heavymetal.png" alt="">
+                            </div>
+                            <p class="playlist__title">Heavy Metal</p>
+                            <p class="playlist__description">Heavy Metal forever. From classics.</p>
+                            <p class="playlist__followers">120,721 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/labestia.png" alt="">
+                            </div>
+                            <p class="playlist__title">La Bestia</p>
+                            <p class="playlist__description">Top Metal releases + snippet</p>
+                            <p class="playlist__followers">102,046 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalnuestro.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal del Nuestro</p>
+                            <p class="playlist__description">Metal hecho en Iberoamérica.</p>
+                            <p class="playlist__followers">190,557 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/kickass.png" alt="">
+                            </div>
+                            <p class="playlist__title">Kickass Metal</p>
+                            <p class="playlist__description">Lo mejor del Metal y flow actual.</p>
+                            <p class="playlist__followers">1,107,648 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/oldschoolmetal.png" alt="">
+                            </div>
+                            <p class="playlist__title">Old School Metal</p>
+                            <p class="playlist__description">¡Quiero Metal, dame Metal!</p>
+                            <p class="playlist__followers">175,315 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalessentials.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal Essentials</p>
+                            <p class="playlist__description">Better to start with the essentials.</p>
+                            <p class="playlist__followers">257,277 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalempire.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal Empire</p>
+                            <p class="playlist__description">Metal tracks all the way from the birth of Metal.</p>
+                            <p class="playlist__followers">36,593 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/heavymetal.png" alt="">
+                            </div>
+                            <p class="playlist__title">Heavy Metal</p>
+                            <p class="playlist__description">Heavy Metal forever. From classics.</p>
+                            <p class="playlist__followers">120,721 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/labestia.png" alt="">
+                            </div>
+                            <p class="playlist__title">La Bestia</p>
+                            <p class="playlist__description">Top Metal releases + snippet</p>
+                            <p class="playlist__followers">102,046 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalnuestro.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal del Nuestro</p>
+                            <p class="playlist__description">Metal hecho en Iberoamérica.</p>
+                            <p class="playlist__followers">190,557 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/kickass.png" alt="">
+                            </div>
+                            <p class="playlist__title">Kickass Metal</p>
+                            <p class="playlist__description">Lo mejor del Metal y flow actual.</p>
+                            <p class="playlist__followers">1,107,648 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/oldschoolmetal.png" alt="">
+                            </div>
+                            <p class="playlist__title">Old School Metal</p>
+                            <p class="playlist__description">¡Quiero Metal, dame Metal!</p>
+                            <p class="playlist__followers">175,315 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalessentials.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal Essentials</p>
+                            <p class="playlist__description">Better to start with the essentials.</p>
+                            <p class="playlist__followers">257,277 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/metalempire.png" alt="">
+                            </div>
+                            <p class="playlist__title">Metal Empire</p>
+                            <p class="playlist__description">Metal tracks all the way from the birth of Metal.</p>
+                            <p class="playlist__followers">36,593 SEGUIDORES</p>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist__cover">
+                                <img src="./assets/playlists/heavymetal.png" alt="">
+                            </div>
+                            <p class="playlist__title">Heavy Metal</p>
+                            <p class="playlist__description">Heavy Metal forever. From classics.</p>
                             <p class="playlist__followers">120,721 SEGUIDORES</p>
                         </div>
                     </div>
