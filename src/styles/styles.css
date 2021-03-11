@@ -351,11 +351,17 @@ html {
 }
 
 .playlist__title {
+    cursor: pointer;
     font-weight: 900;
     font-size: 14px;
     line-height: 22px;
     margin: 0;
     margin-top: 8px;
+    display: inline-block;
+}
+
+.playlist__title:hover {
+    text-decoration: underline;
 }
 
 .playlist__description, .playlist__followers {
