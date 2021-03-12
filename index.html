@@ -1,818 +1,1046 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Spotifu</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="app-container">
-        <aside class="sidebar">
-            <p class="logo">Spotifu</p>
-            <div class="sections">
-                <div class="section section--active">
-                    <i>
-                        <svg class="icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M37.0797 39H23.7955V25.5H16.2045V39H2.92032V10.9406L20 1L37.0797 10.8728V39Z"/>
-                        </svg>
-                    </i>
-                    <p>Inicio</p>
-                </div>
-                <div class="section">
-                    <i>
-                        <svg class="icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M29.3008 28.1934L37.4721 37.782L36.0548 39L27.8613 29.4114C25.0416 31.552 21.8675 32.6223 18.3391 32.6223C16.1984 32.6223 14.1501 32.2052 12.194 31.3711C10.238 30.537 8.55498 29.4151 7.14505 28.0052C5.73512 26.5953 4.61314 24.9123 3.7791 22.9562C2.94506 21.0001 2.52801 18.9518 2.52795 16.8111C2.5279 14.6705 2.94494 12.6222 3.7791 10.6661C4.61326 8.70995 5.73524 7.02696 7.14505 5.61709C8.55486 4.20723 10.2378 3.08524 12.194 2.25115C14.1502 1.41705 16.1985 1 18.3391 1C20.4797 1 22.528 1.41705 24.4842 2.25115C26.4403 3.08524 28.1233 4.20723 29.5331 5.61709C30.943 7.02696 32.0649 8.70995 32.8991 10.6661C33.7333 12.6222 34.1503 14.6705 34.1502 16.8111C34.1502 19.0108 33.7221 21.0924 32.8659 23.0559C32.0096 25.0194 30.8212 26.7319 29.3006 28.1934L29.3008 28.1934ZM18.3393 30.7621C20.8637 30.7621 23.1963 30.1383 25.3369 28.8908C27.4776 27.6433 29.1717 25.9492 30.4191 23.8086C31.6666 21.668 32.2903 19.3355 32.2904 16.811C32.2905 14.2865 31.6667 11.9539 30.4191 9.8133C29.1716 7.67269 27.4775 5.97866 25.3369 4.7312C23.1964 3.48375 20.8638 2.86002 18.3393 2.86002C15.8147 2.86002 13.4822 3.48375 11.3416 4.7312C9.20105 5.97866 7.50702 7.67269 6.25951 9.8133C5.01199 11.9539 4.38827 14.2865 4.38832 16.811C4.38838 19.3355 5.01211 21.668 6.25951 23.8086C7.5069 25.9492 9.20094 27.6433 11.3416 28.8908C13.4823 30.1383 15.8148 30.7621 18.3393 30.7621Z"/>
-                        </svg>
-                    </i>
-                    <p>Buscar</p>
-                </div>
-                <div class="section">
-                    <i>
-                        <svg class="icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3.375 8.125V29.5H36.625V8.125H3.375ZM3.375 5.75H36.625C37.2549 5.75 37.859 6.00022 38.3044 6.44562C38.7498 6.89102 39 7.49511 39 8.125V31.875C39 32.5049 38.7498 33.109 38.3044 33.5544C37.859 33.9998 37.2549 34.25 36.625 34.25H3.375C2.74511 34.25 2.14102 33.9998 1.69562 33.5544C1.25022 33.109 1 32.5049 1 31.875V8.125C1 7.49511 1.25022 6.89102 1.69562 6.44562C2.14102 6.00022 2.74511 5.75 3.375 5.75Z"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.75 20H34.25V27.125H24.75V20Z"/>
-                        </svg>    
-                    </i>
-                    <p>Premium</p>
-                </div>
-                <div class="bar"></div>
-            </div>
-            <div class="library">
-                <p>Tu Biblioteca</p>
-                <a href="#">Creada por ti</a>
-                <a href="#">Escuchado recientemente</a>
-                <a href="#">Tus Me Gusta</a>
-                <a href="#">Artistas</a>
-                <a href="#">Podcasts</a>
-            </div>
-        </aside>
-        <div class="main">
-            <div class="main__header">
-                <img src="./assets/left arrow.svg" alt="" class="header__arrow">
-                <img src="./assets/right arrow.svg" alt="" class="header__arrow">
-                <div class="header__search-bar">
-                    <label for="search"><img src="./assets/Search small.svg" alt=""></label>
-                    <input id="search" type="text" placeholder="Buscar">
-                </div>
-            </div>
-            <h1>Inicio</h1>
-            <div class="main__lists">
-                <div class="list">
-                    <div class="list__header">
-                        <h2>Top playlists</h2>
-                        <div class="list__header__arrows">
-                            <img id="left-arrow" src="./assets/left arrow.svg" alt="">
-                            <img id="right-arrow" class="arrow--active" src="./assets/right arrow.svg" alt="">
-                        </div>
-                    </div>
-                    <div id="playlsit"class="list__playlists">
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/mansion-reggaeton.jpg" alt="">
-                            </div>
-                            <p href="#" class="playlist__title">Mansión Reggaeton</p>
-                            <p class="playlist__description">Los éxitos de reggaetón del momento.</p>
-                            <p class="playlist__followers">2,611,830 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/exitos.png" alt="">
-                            </div>
-                            <p class="playlist__title">Éxitos</p>
-                            <p class="playlist__description">Aquí están los hits más grandes del momento.</p>
-                            <p class="playlist__followers">23,720,224 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/hits-urbanos.png" alt="">
-                            </div>
-                            <p class="playlist__title">Hits Urbanos</p>
-                            <p class="playlist__description">Éxitos urbanos de Latinoamérica.</p>
-                            <p class="playlist__followers">1,131,650 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/dame-salsa.png" alt="">
-                            </div>
-                            <p class="playlist__title">Dame Salsa</p>
-                            <p class="playlist__description">¡Quiero Salsa, dame Salsa! Josimar y Su Yambú</p>
-                            <p class="playlist__followers">175,315 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/funketon.png" alt="">
-                            </div>
-                            <p class="playlist__title">Funketon</p>
-                            <p class="playlist__description">Funk + Reggaeton Cover: Bad Bunny</p>
-                            <p class="playlist__followers">36,593 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/bachateame.png" alt="">
-                            </div>
-                            <p class="playlist__title">Bachatéame</p>
-                            <p class="playlist__description">¡Esto sí es Bachata! Natti Natasha & Romeo</p>
-                            <p class="playlist__followers">120,721 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/mansion-reggaeton.jpg" alt="">
-                            </div>
-                            <p class="playlist__title">Mansión Reggaeton</p>
-                            <p class="playlist__description">Los éxitos de reggaetón del momento.</p>
-                            <p class="playlist__followers">2,611,830 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/exitos.png" alt="">
-                            </div>
-                            <p class="playlist__title">Éxitos</p>
-                            <p class="playlist__description">Aquí están los hits más grandes del momento.</p>
-                            <p class="playlist__followers">23,720,224 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/hits-urbanos.png" alt="">
-                            </div>
-                            <p class="playlist__title">Hits Urbanos</p>
-                            <p class="playlist__description">Éxitos urbanos de Latinoamérica.</p>
-                            <p class="playlist__followers">1,131,650 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/dame-salsa.png" alt="">
-                            </div>
-                            <p class="playlist__title">Dame Salsa</p>
-                            <p class="playlist__description">¡Quiero Salsa, dame Salsa! Josimar y Su Yambú</p>
-                            <p class="playlist__followers">175,315 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/funketon.png" alt="">
-                            </div>
-                            <p class="playlist__title">Funketon</p>
-                            <p class="playlist__description">Funk + Reggaeton Cover: Bad Bunny</p>
-                            <p class="playlist__followers">36,593 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/bachateame.png" alt="">
-                            </div>
-                            <p class="playlist__title">Bachatéame</p>
-                            <p class="playlist__description">¡Esto sí es Bachata! Natti Natasha & Romeo</p>
-                            <p class="playlist__followers">120,721 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/mansion-reggaeton.jpg" alt="">
-                            </div>
-                            <p class="playlist__title">Mansión Reggaeton</p>
-                            <p class="playlist__description">Los éxitos de reggaetón del momento.</p>
-                            <p class="playlist__followers">2,611,830 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/exitos.png" alt="">
-                            </div>
-                            <p class="playlist__title">Éxitos</p>
-                            <p class="playlist__description">Aquí están los hits más grandes del momento.</p>
-                            <p class="playlist__followers">23,720,224 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/hits-urbanos.png" alt="">
-                            </div>
-                            <p class="playlist__title">Hits Urbanos</p>
-                            <p class="playlist__description">Éxitos urbanos de Latinoamérica.</p>
-                            <p class="playlist__followers">1,131,650 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/dame-salsa.png" alt="">
-                            </div>
-                            <p class="playlist__title">Dame Salsa</p>
-                            <p class="playlist__description">¡Quiero Salsa, dame Salsa! Josimar y Su Yambú</p>
-                            <p class="playlist__followers">175,315 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/funketon.png" alt="">
-                            </div>
-                            <p class="playlist__title">Funketon</p>
-                            <p class="playlist__description">Funk + Reggaeton Cover: Bad Bunny</p>
-                            <p class="playlist__followers">36,593 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/bachateame.png" alt="">
-                            </div>
-                            <p class="playlist__title">Bachatéame</p>
-                            <p class="playlist__description">¡Esto sí es Bachata! Natti Natasha & Romeo</p>
-                            <p class="playlist__followers">120,721 SEGUIDORES</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="list">
-                    <div class="list__header">
-                        <h2>Escuchado recientemente</h2>
-                        <div class="list__header__arrows">
-                            <img id="left-arrow" src="./assets/left arrow.svg" alt="">
-                            <img id="right-arrow" class="arrow--active" src="./assets/right arrow.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="list__playlists">
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/labestia.png" alt="">
-                            </div>
-                            <p class="playlist__title">La Bestia</p>
-                            <p class="playlist__description">Top Metal releases + snippet</p>
-                            <p class="playlist__followers">102,046 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalnuestro.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal del Nuestro</p>
-                            <p class="playlist__description">Metal hecho en Iberoamérica.</p>
-                            <p class="playlist__followers">190,557 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/kickass.png" alt="">
-                            </div>
-                            <p class="playlist__title">Kickass Metal</p>
-                            <p class="playlist__description">Lo mejor del Metal y flow actual.</p>
-                            <p class="playlist__followers">1,107,648 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/oldschoolmetal.png" alt="">
-                            </div>
-                            <p class="playlist__title">Old School Metal</p>
-                            <p class="playlist__description">¡Quiero Metal, dame Metal!</p>
-                            <p class="playlist__followers">175,315 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalessentials.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal Essentials</p>
-                            <p class="playlist__description">Better to start with the essentials.</p>
-                            <p class="playlist__followers">257,277 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalempire.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal Empire</p>
-                            <p class="playlist__description">Metal tracks all the way from the birth of Metal.</p>
-                            <p class="playlist__followers">36,593 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/heavymetal.png" alt="">
-                            </div>
-                            <p class="playlist__title">Heavy Metal</p>
-                            <p class="playlist__description">Heavy Metal forever. From classics.</p>
-                            <p class="playlist__followers">120,721 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/labestia.png" alt="">
-                            </div>
-                            <p class="playlist__title">La Bestia</p>
-                            <p class="playlist__description">Top Metal releases + snippet</p>
-                            <p class="playlist__followers">102,046 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalnuestro.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal del Nuestro</p>
-                            <p class="playlist__description">Metal hecho en Iberoamérica.</p>
-                            <p class="playlist__followers">190,557 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/kickass.png" alt="">
-                            </div>
-                            <p class="playlist__title">Kickass Metal</p>
-                            <p class="playlist__description">Lo mejor del Metal y flow actual.</p>
-                            <p class="playlist__followers">1,107,648 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/oldschoolmetal.png" alt="">
-                            </div>
-                            <p class="playlist__title">Old School Metal</p>
-                            <p class="playlist__description">¡Quiero Metal, dame Metal!</p>
-                            <p class="playlist__followers">175,315 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalessentials.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal Essentials</p>
-                            <p class="playlist__description">Better to start with the essentials.</p>
-                            <p class="playlist__followers">257,277 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalempire.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal Empire</p>
-                            <p class="playlist__description">Metal tracks all the way from the birth of Metal.</p>
-                            <p class="playlist__followers">36,593 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/heavymetal.png" alt="">
-                            </div>
-                            <p class="playlist__title">Heavy Metal</p>
-                            <p class="playlist__description">Heavy Metal forever. From classics.</p>
-                            <p class="playlist__followers">120,721 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/labestia.png" alt="">
-                            </div>
-                            <p class="playlist__title">La Bestia</p>
-                            <p class="playlist__description">Top Metal releases + snippet</p>
-                            <p class="playlist__followers">102,046 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalnuestro.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal del Nuestro</p>
-                            <p class="playlist__description">Metal hecho en Iberoamérica.</p>
-                            <p class="playlist__followers">190,557 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/kickass.png" alt="">
-                            </div>
-                            <p class="playlist__title">Kickass Metal</p>
-                            <p class="playlist__description">Lo mejor del Metal y flow actual.</p>
-                            <p class="playlist__followers">1,107,648 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/oldschoolmetal.png" alt="">
-                            </div>
-                            <p class="playlist__title">Old School Metal</p>
-                            <p class="playlist__description">¡Quiero Metal, dame Metal!</p>
-                            <p class="playlist__followers">175,315 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalessentials.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal Essentials</p>
-                            <p class="playlist__description">Better to start with the essentials.</p>
-                            <p class="playlist__followers">257,277 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalempire.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal Empire</p>
-                            <p class="playlist__description">Metal tracks all the way from the birth of Metal.</p>
-                            <p class="playlist__followers">36,593 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/heavymetal.png" alt="">
-                            </div>
-                            <p class="playlist__title">Heavy Metal</p>
-                            <p class="playlist__description">Heavy Metal forever. From classics.</p>
-                            <p class="playlist__followers">120,721 SEGUIDORES</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="list">
-                    <div class="list__header">
-                        <h2>Top playlists</h2>
-                        <div class="list__header__arrows">
-                            <img id="left-arrow" src="./assets/left arrow.svg" alt="">
-                            <img id="right-arrow" class="arrow--active" src="./assets/right arrow.svg" alt="">
-                        </div>
-                    </div>
-                    <div id="playlsit"class="list__playlists">
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/mansion-reggaeton.jpg" alt="">
-                            </div>
-                            <p class="playlist__title">Mansión Reggaeton</p>
-                            <p class="playlist__description">Los éxitos de reggaetón del momento.</p>
-                            <p class="playlist__followers">2,611,830 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/exitos.png" alt="">
-                            </div>
-                            <p class="playlist__title">Éxitos</p>
-                            <p class="playlist__description">Aquí están los hits más grandes del momento.</p>
-                            <p class="playlist__followers">23,720,224 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/hits-urbanos.png" alt="">
-                            </div>
-                            <p class="playlist__title">Hits Urbanos</p>
-                            <p class="playlist__description">Éxitos urbanos de Latinoamérica.</p>
-                            <p class="playlist__followers">1,131,650 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/dame-salsa.png" alt="">
-                            </div>
-                            <p class="playlist__title">Dame Salsa</p>
-                            <p class="playlist__description">¡Quiero Salsa, dame Salsa! Josimar y Su Yambú</p>
-                            <p class="playlist__followers">175,315 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/funketon.png" alt="">
-                            </div>
-                            <p class="playlist__title">Funketon</p>
-                            <p class="playlist__description">Funk + Reggaeton Cover: Bad Bunny</p>
-                            <p class="playlist__followers">36,593 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/bachateame.png" alt="">
-                            </div>
-                            <p class="playlist__title">Bachatéame</p>
-                            <p class="playlist__description">¡Esto sí es Bachata! Natti Natasha & Romeo</p>
-                            <p class="playlist__followers">120,721 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/mansion-reggaeton.jpg" alt="">
-                            </div>
-                            <p class="playlist__title">Mansión Reggaeton</p>
-                            <p class="playlist__description">Los éxitos de reggaetón del momento.</p>
-                            <p class="playlist__followers">2,611,830 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/exitos.png" alt="">
-                            </div>
-                            <p class="playlist__title">Éxitos</p>
-                            <p class="playlist__description">Aquí están los hits más grandes del momento.</p>
-                            <p class="playlist__followers">23,720,224 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/hits-urbanos.png" alt="">
-                            </div>
-                            <p class="playlist__title">Hits Urbanos</p>
-                            <p class="playlist__description">Éxitos urbanos de Latinoamérica.</p>
-                            <p class="playlist__followers">1,131,650 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/dame-salsa.png" alt="">
-                            </div>
-                            <p class="playlist__title">Dame Salsa</p>
-                            <p class="playlist__description">¡Quiero Salsa, dame Salsa! Josimar y Su Yambú</p>
-                            <p class="playlist__followers">175,315 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/funketon.png" alt="">
-                            </div>
-                            <p class="playlist__title">Funketon</p>
-                            <p class="playlist__description">Funk + Reggaeton Cover: Bad Bunny</p>
-                            <p class="playlist__followers">36,593 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/bachateame.png" alt="">
-                            </div>
-                            <p class="playlist__title">Bachatéame</p>
-                            <p class="playlist__description">¡Esto sí es Bachata! Natti Natasha & Romeo</p>
-                            <p class="playlist__followers">120,721 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/mansion-reggaeton.jpg" alt="">
-                            </div>
-                            <p class="playlist__title">Mansión Reggaeton</p>
-                            <p class="playlist__description">Los éxitos de reggaetón del momento.</p>
-                            <p class="playlist__followers">2,611,830 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/exitos.png" alt="">
-                            </div>
-                            <p class="playlist__title">Éxitos</p>
-                            <p class="playlist__description">Aquí están los hits más grandes del momento.</p>
-                            <p class="playlist__followers">23,720,224 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/hits-urbanos.png" alt="">
-                            </div>
-                            <p class="playlist__title">Hits Urbanos</p>
-                            <p class="playlist__description">Éxitos urbanos de Latinoamérica.</p>
-                            <p class="playlist__followers">1,131,650 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/dame-salsa.png" alt="">
-                            </div>
-                            <p class="playlist__title">Dame Salsa</p>
-                            <p class="playlist__description">¡Quiero Salsa, dame Salsa! Josimar y Su Yambú</p>
-                            <p class="playlist__followers">175,315 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/funketon.png" alt="">
-                            </div>
-                            <p class="playlist__title">Funketon</p>
-                            <p class="playlist__description">Funk + Reggaeton Cover: Bad Bunny</p>
-                            <p class="playlist__followers">36,593 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/bachateame.png" alt="">
-                            </div>
-                            <p class="playlist__title">Bachatéame</p>
-                            <p class="playlist__description">¡Esto sí es Bachata! Natti Natasha & Romeo</p>
-                            <p class="playlist__followers">120,721 SEGUIDORES</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="list">
-                    <div class="list__header">
-                        <h2>Escuchado recientemente</h2>
-                        <div class="list__header__arrows">
-                            <img id="left-arrow" src="./assets/left arrow.svg" alt="">
-                            <img id="right-arrow" class="arrow--active" src="./assets/right arrow.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="list__playlists">
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/labestia.png" alt="">
-                            </div>
-                            <p class="playlist__title">La Bestia</p>
-                            <p class="playlist__description">Top Metal releases + snippet</p>
-                            <p class="playlist__followers">102,046 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalnuestro.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal del Nuestro</p>
-                            <p class="playlist__description">Metal hecho en Iberoamérica.</p>
-                            <p class="playlist__followers">190,557 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/kickass.png" alt="">
-                            </div>
-                            <p class="playlist__title">Kickass Metal</p>
-                            <p class="playlist__description">Lo mejor del Metal y flow actual.</p>
-                            <p class="playlist__followers">1,107,648 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/oldschoolmetal.png" alt="">
-                            </div>
-                            <p class="playlist__title">Old School Metal</p>
-                            <p class="playlist__description">¡Quiero Metal, dame Metal!</p>
-                            <p class="playlist__followers">175,315 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalessentials.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal Essentials</p>
-                            <p class="playlist__description">Better to start with the essentials.</p>
-                            <p class="playlist__followers">257,277 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalempire.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal Empire</p>
-                            <p class="playlist__description">Metal tracks all the way from the birth of Metal.</p>
-                            <p class="playlist__followers">36,593 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/heavymetal.png" alt="">
-                            </div>
-                            <p class="playlist__title">Heavy Metal</p>
-                            <p class="playlist__description">Heavy Metal forever. From classics.</p>
-                            <p class="playlist__followers">120,721 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/labestia.png" alt="">
-                            </div>
-                            <p class="playlist__title">La Bestia</p>
-                            <p class="playlist__description">Top Metal releases + snippet</p>
-                            <p class="playlist__followers">102,046 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalnuestro.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal del Nuestro</p>
-                            <p class="playlist__description">Metal hecho en Iberoamérica.</p>
-                            <p class="playlist__followers">190,557 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/kickass.png" alt="">
-                            </div>
-                            <p class="playlist__title">Kickass Metal</p>
-                            <p class="playlist__description">Lo mejor del Metal y flow actual.</p>
-                            <p class="playlist__followers">1,107,648 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/oldschoolmetal.png" alt="">
-                            </div>
-                            <p class="playlist__title">Old School Metal</p>
-                            <p class="playlist__description">¡Quiero Metal, dame Metal!</p>
-                            <p class="playlist__followers">175,315 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalessentials.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal Essentials</p>
-                            <p class="playlist__description">Better to start with the essentials.</p>
-                            <p class="playlist__followers">257,277 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalempire.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal Empire</p>
-                            <p class="playlist__description">Metal tracks all the way from the birth of Metal.</p>
-                            <p class="playlist__followers">36,593 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/heavymetal.png" alt="">
-                            </div>
-                            <p class="playlist__title">Heavy Metal</p>
-                            <p class="playlist__description">Heavy Metal forever. From classics.</p>
-                            <p class="playlist__followers">120,721 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/labestia.png" alt="">
-                            </div>
-                            <p class="playlist__title">La Bestia</p>
-                            <p class="playlist__description">Top Metal releases + snippet</p>
-                            <p class="playlist__followers">102,046 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalnuestro.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal del Nuestro</p>
-                            <p class="playlist__description">Metal hecho en Iberoamérica.</p>
-                            <p class="playlist__followers">190,557 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/kickass.png" alt="">
-                            </div>
-                            <p class="playlist__title">Kickass Metal</p>
-                            <p class="playlist__description">Lo mejor del Metal y flow actual.</p>
-                            <p class="playlist__followers">1,107,648 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/oldschoolmetal.png" alt="">
-                            </div>
-                            <p class="playlist__title">Old School Metal</p>
-                            <p class="playlist__description">¡Quiero Metal, dame Metal!</p>
-                            <p class="playlist__followers">175,315 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalessentials.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal Essentials</p>
-                            <p class="playlist__description">Better to start with the essentials.</p>
-                            <p class="playlist__followers">257,277 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/metalempire.png" alt="">
-                            </div>
-                            <p class="playlist__title">Metal Empire</p>
-                            <p class="playlist__description">Metal tracks all the way from the birth of Metal.</p>
-                            <p class="playlist__followers">36,593 SEGUIDORES</p>
-                        </div>
-                        <div class="playlist">
-                            <div class="playlist__cover">
-                                <div class="playlist__button"></div>
-                                <img src="./assets/playlists/heavymetal.png" alt="">
-                            </div>
-                            <p class="playlist__title">Heavy Metal</p>
-                            <p class="playlist__description">Heavy Metal forever. From classics.</p>
-                            <p class="playlist__followers">120,721 SEGUIDORES</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <aside class="sidebar">
+        <p class="logo">Spotifu</p>
+        <div class="sections">
+          <div class="section section--active">
+            <i>
+              <svg
+                class="icon"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M37.0797 39H23.7955V25.5H16.2045V39H2.92032V10.9406L20 1L37.0797 10.8728V39Z"
+                />
+              </svg>
+            </i>
+            <p>Inicio</p>
+          </div>
+          <div class="section">
+            <i>
+              <svg
+                class="icon"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M29.3008 28.1934L37.4721 37.782L36.0548 39L27.8613 29.4114C25.0416 31.552 21.8675 32.6223 18.3391 32.6223C16.1984 32.6223 14.1501 32.2052 12.194 31.3711C10.238 30.537 8.55498 29.4151 7.14505 28.0052C5.73512 26.5953 4.61314 24.9123 3.7791 22.9562C2.94506 21.0001 2.52801 18.9518 2.52795 16.8111C2.5279 14.6705 2.94494 12.6222 3.7791 10.6661C4.61326 8.70995 5.73524 7.02696 7.14505 5.61709C8.55486 4.20723 10.2378 3.08524 12.194 2.25115C14.1502 1.41705 16.1985 1 18.3391 1C20.4797 1 22.528 1.41705 24.4842 2.25115C26.4403 3.08524 28.1233 4.20723 29.5331 5.61709C30.943 7.02696 32.0649 8.70995 32.8991 10.6661C33.7333 12.6222 34.1503 14.6705 34.1502 16.8111C34.1502 19.0108 33.7221 21.0924 32.8659 23.0559C32.0096 25.0194 30.8212 26.7319 29.3006 28.1934L29.3008 28.1934ZM18.3393 30.7621C20.8637 30.7621 23.1963 30.1383 25.3369 28.8908C27.4776 27.6433 29.1717 25.9492 30.4191 23.8086C31.6666 21.668 32.2903 19.3355 32.2904 16.811C32.2905 14.2865 31.6667 11.9539 30.4191 9.8133C29.1716 7.67269 27.4775 5.97866 25.3369 4.7312C23.1964 3.48375 20.8638 2.86002 18.3393 2.86002C15.8147 2.86002 13.4822 3.48375 11.3416 4.7312C9.20105 5.97866 7.50702 7.67269 6.25951 9.8133C5.01199 11.9539 4.38827 14.2865 4.38832 16.811C4.38838 19.3355 5.01211 21.668 6.25951 23.8086C7.5069 25.9492 9.20094 27.6433 11.3416 28.8908C13.4823 30.1383 15.8148 30.7621 18.3393 30.7621Z"
+                />
+              </svg>
+            </i>
+            <p>Buscar</p>
+          </div>
+          <div class="section">
+            <i>
+              <svg
+                class="icon"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.375 8.125V29.5H36.625V8.125H3.375ZM3.375 5.75H36.625C37.2549 5.75 37.859 6.00022 38.3044 6.44562C38.7498 6.89102 39 7.49511 39 8.125V31.875C39 32.5049 38.7498 33.109 38.3044 33.5544C37.859 33.9998 37.2549 34.25 36.625 34.25H3.375C2.74511 34.25 2.14102 33.9998 1.69562 33.5544C1.25022 33.109 1 32.5049 1 31.875V8.125C1 7.49511 1.25022 6.89102 1.69562 6.44562C2.14102 6.00022 2.74511 5.75 3.375 5.75Z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24.75 20H34.25V27.125H24.75V20Z"
+                />
+              </svg>
+            </i>
+            <p>Premium</p>
+          </div>
+          <div class="bar"></div>
         </div>
-        <div class="trackbar">
-            TRACK
+        <div class="library">
+          <p>Tu Biblioteca</p>
+          <a href="#">Creada por ti</a>
+          <a href="#">Escuchado recientemente</a>
+          <a href="#">Tus Me Gusta</a>
+          <a href="#">Artistas</a>
+          <a href="#">Podcasts</a>
         </div>
+      </aside>
+      <div class="main">
+        <div class="main__header">
+          <div class="header">
+            <img src="./assets/left arrow.svg" alt="" class="header__arrow" />
+            <img src="./assets/right arrow.svg" alt="" class="header__arrow" />
+            <div class="header__search-bar">
+              <label for="search"
+                ><img src="./assets/Search small.svg" alt=""
+              /></label>
+              <input id="search" type="text" placeholder="Buscar" />
+            </div>
+          </div>
+          <h1 class="header__title">Inicio</h1>
+        </div>
+        <div class="main__content">
+          <div class="main__lists">
+            <div class="list">
+              <div class="list__header">
+                <h2>Top playlists</h2>
+                <div class="list__header__arrows">
+                  <img id="left-arrow" src="./assets/left arrow.svg" alt="" />
+                  <img
+                    id="right-arrow"
+                    class="arrow--active"
+                    src="./assets/right arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div id="playlsit" class="list__playlists">
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img
+                      src="./assets/playlists/mansion-reggaeton.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p href="#" class="playlist__title">Mansión Reggaeton</p>
+                  <p class="playlist__description">
+                    Los éxitos de reggaetón del momento.
+                  </p>
+                  <p class="playlist__followers">2,611,830 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/exitos.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Éxitos</p>
+                  <p class="playlist__description">
+                    Aquí están los hits más grandes del momento.
+                  </p>
+                  <p class="playlist__followers">23,720,224 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/hits-urbanos.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Hits Urbanos</p>
+                  <p class="playlist__description">
+                    Éxitos urbanos de Latinoamérica.
+                  </p>
+                  <p class="playlist__followers">1,131,650 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/dame-salsa.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Dame Salsa</p>
+                  <p class="playlist__description">
+                    ¡Quiero Salsa, dame Salsa! Josimar y Su Yambú
+                  </p>
+                  <p class="playlist__followers">175,315 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/funketon.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Funketon</p>
+                  <p class="playlist__description">
+                    Funk + Reggaeton Cover: Bad Bunny
+                  </p>
+                  <p class="playlist__followers">36,593 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/bachateame.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Bachatéame</p>
+                  <p class="playlist__description">
+                    ¡Esto sí es Bachata! Natti Natasha & Romeo
+                  </p>
+                  <p class="playlist__followers">120,721 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img
+                      src="./assets/playlists/mansion-reggaeton.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="playlist__title">Mansión Reggaeton</p>
+                  <p class="playlist__description">
+                    Los éxitos de reggaetón del momento.
+                  </p>
+                  <p class="playlist__followers">2,611,830 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/exitos.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Éxitos</p>
+                  <p class="playlist__description">
+                    Aquí están los hits más grandes del momento.
+                  </p>
+                  <p class="playlist__followers">23,720,224 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/hits-urbanos.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Hits Urbanos</p>
+                  <p class="playlist__description">
+                    Éxitos urbanos de Latinoamérica.
+                  </p>
+                  <p class="playlist__followers">1,131,650 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/dame-salsa.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Dame Salsa</p>
+                  <p class="playlist__description">
+                    ¡Quiero Salsa, dame Salsa! Josimar y Su Yambú
+                  </p>
+                  <p class="playlist__followers">175,315 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/funketon.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Funketon</p>
+                  <p class="playlist__description">
+                    Funk + Reggaeton Cover: Bad Bunny
+                  </p>
+                  <p class="playlist__followers">36,593 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/bachateame.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Bachatéame</p>
+                  <p class="playlist__description">
+                    ¡Esto sí es Bachata! Natti Natasha & Romeo
+                  </p>
+                  <p class="playlist__followers">120,721 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img
+                      src="./assets/playlists/mansion-reggaeton.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="playlist__title">Mansión Reggaeton</p>
+                  <p class="playlist__description">
+                    Los éxitos de reggaetón del momento.
+                  </p>
+                  <p class="playlist__followers">2,611,830 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/exitos.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Éxitos</p>
+                  <p class="playlist__description">
+                    Aquí están los hits más grandes del momento.
+                  </p>
+                  <p class="playlist__followers">23,720,224 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/hits-urbanos.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Hits Urbanos</p>
+                  <p class="playlist__description">
+                    Éxitos urbanos de Latinoamérica.
+                  </p>
+                  <p class="playlist__followers">1,131,650 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/dame-salsa.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Dame Salsa</p>
+                  <p class="playlist__description">
+                    ¡Quiero Salsa, dame Salsa! Josimar y Su Yambú
+                  </p>
+                  <p class="playlist__followers">175,315 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/funketon.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Funketon</p>
+                  <p class="playlist__description">
+                    Funk + Reggaeton Cover: Bad Bunny
+                  </p>
+                  <p class="playlist__followers">36,593 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/bachateame.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Bachatéame</p>
+                  <p class="playlist__description">
+                    ¡Esto sí es Bachata! Natti Natasha & Romeo
+                  </p>
+                  <p class="playlist__followers">120,721 SEGUIDORES</p>
+                </div>
+              </div>
+            </div>
+            <div class="list">
+              <div class="list__header">
+                <h2>Escuchado recientemente</h2>
+                <div class="list__header__arrows">
+                  <img id="left-arrow" src="./assets/left arrow.svg" alt="" />
+                  <img
+                    id="right-arrow"
+                    class="arrow--active"
+                    src="./assets/right arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="list__playlists">
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/labestia.png" alt="" />
+                  </div>
+                  <p class="playlist__title">La Bestia</p>
+                  <p class="playlist__description">
+                    Top Metal releases + snippet
+                  </p>
+                  <p class="playlist__followers">102,046 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalnuestro.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal del Nuestro</p>
+                  <p class="playlist__description">
+                    Metal hecho en Iberoamérica.
+                  </p>
+                  <p class="playlist__followers">190,557 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/kickass.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Kickass Metal</p>
+                  <p class="playlist__description">
+                    Lo mejor del Metal y flow actual.
+                  </p>
+                  <p class="playlist__followers">1,107,648 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/oldschoolmetal.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Old School Metal</p>
+                  <p class="playlist__description">
+                    ¡Quiero Metal, dame Metal!
+                  </p>
+                  <p class="playlist__followers">175,315 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalessentials.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal Essentials</p>
+                  <p class="playlist__description">
+                    Better to start with the essentials.
+                  </p>
+                  <p class="playlist__followers">257,277 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalempire.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal Empire</p>
+                  <p class="playlist__description">
+                    Metal tracks all the way from the birth of Metal.
+                  </p>
+                  <p class="playlist__followers">36,593 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/heavymetal.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Heavy Metal</p>
+                  <p class="playlist__description">
+                    Heavy Metal forever. From classics.
+                  </p>
+                  <p class="playlist__followers">120,721 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/labestia.png" alt="" />
+                  </div>
+                  <p class="playlist__title">La Bestia</p>
+                  <p class="playlist__description">
+                    Top Metal releases + snippet
+                  </p>
+                  <p class="playlist__followers">102,046 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalnuestro.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal del Nuestro</p>
+                  <p class="playlist__description">
+                    Metal hecho en Iberoamérica.
+                  </p>
+                  <p class="playlist__followers">190,557 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/kickass.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Kickass Metal</p>
+                  <p class="playlist__description">
+                    Lo mejor del Metal y flow actual.
+                  </p>
+                  <p class="playlist__followers">1,107,648 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/oldschoolmetal.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Old School Metal</p>
+                  <p class="playlist__description">
+                    ¡Quiero Metal, dame Metal!
+                  </p>
+                  <p class="playlist__followers">175,315 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalessentials.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal Essentials</p>
+                  <p class="playlist__description">
+                    Better to start with the essentials.
+                  </p>
+                  <p class="playlist__followers">257,277 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalempire.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal Empire</p>
+                  <p class="playlist__description">
+                    Metal tracks all the way from the birth of Metal.
+                  </p>
+                  <p class="playlist__followers">36,593 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/heavymetal.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Heavy Metal</p>
+                  <p class="playlist__description">
+                    Heavy Metal forever. From classics.
+                  </p>
+                  <p class="playlist__followers">120,721 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/labestia.png" alt="" />
+                  </div>
+                  <p class="playlist__title">La Bestia</p>
+                  <p class="playlist__description">
+                    Top Metal releases + snippet
+                  </p>
+                  <p class="playlist__followers">102,046 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalnuestro.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal del Nuestro</p>
+                  <p class="playlist__description">
+                    Metal hecho en Iberoamérica.
+                  </p>
+                  <p class="playlist__followers">190,557 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/kickass.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Kickass Metal</p>
+                  <p class="playlist__description">
+                    Lo mejor del Metal y flow actual.
+                  </p>
+                  <p class="playlist__followers">1,107,648 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/oldschoolmetal.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Old School Metal</p>
+                  <p class="playlist__description">
+                    ¡Quiero Metal, dame Metal!
+                  </p>
+                  <p class="playlist__followers">175,315 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalessentials.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal Essentials</p>
+                  <p class="playlist__description">
+                    Better to start with the essentials.
+                  </p>
+                  <p class="playlist__followers">257,277 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalempire.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal Empire</p>
+                  <p class="playlist__description">
+                    Metal tracks all the way from the birth of Metal.
+                  </p>
+                  <p class="playlist__followers">36,593 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/heavymetal.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Heavy Metal</p>
+                  <p class="playlist__description">
+                    Heavy Metal forever. From classics.
+                  </p>
+                  <p class="playlist__followers">120,721 SEGUIDORES</p>
+                </div>
+              </div>
+            </div>
+            <div class="list">
+              <div class="list__header">
+                <h2>Top playlists</h2>
+                <div class="list__header__arrows">
+                  <img id="left-arrow" src="./assets/left arrow.svg" alt="" />
+                  <img
+                    id="right-arrow"
+                    class="arrow--active"
+                    src="./assets/right arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div id="playlsit" class="list__playlists">
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img
+                      src="./assets/playlists/mansion-reggaeton.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="playlist__title">Mansión Reggaeton</p>
+                  <p class="playlist__description">
+                    Los éxitos de reggaetón del momento.
+                  </p>
+                  <p class="playlist__followers">2,611,830 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/exitos.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Éxitos</p>
+                  <p class="playlist__description">
+                    Aquí están los hits más grandes del momento.
+                  </p>
+                  <p class="playlist__followers">23,720,224 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/hits-urbanos.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Hits Urbanos</p>
+                  <p class="playlist__description">
+                    Éxitos urbanos de Latinoamérica.
+                  </p>
+                  <p class="playlist__followers">1,131,650 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/dame-salsa.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Dame Salsa</p>
+                  <p class="playlist__description">
+                    ¡Quiero Salsa, dame Salsa! Josimar y Su Yambú
+                  </p>
+                  <p class="playlist__followers">175,315 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/funketon.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Funketon</p>
+                  <p class="playlist__description">
+                    Funk + Reggaeton Cover: Bad Bunny
+                  </p>
+                  <p class="playlist__followers">36,593 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/bachateame.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Bachatéame</p>
+                  <p class="playlist__description">
+                    ¡Esto sí es Bachata! Natti Natasha & Romeo
+                  </p>
+                  <p class="playlist__followers">120,721 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img
+                      src="./assets/playlists/mansion-reggaeton.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="playlist__title">Mansión Reggaeton</p>
+                  <p class="playlist__description">
+                    Los éxitos de reggaetón del momento.
+                  </p>
+                  <p class="playlist__followers">2,611,830 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/exitos.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Éxitos</p>
+                  <p class="playlist__description">
+                    Aquí están los hits más grandes del momento.
+                  </p>
+                  <p class="playlist__followers">23,720,224 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/hits-urbanos.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Hits Urbanos</p>
+                  <p class="playlist__description">
+                    Éxitos urbanos de Latinoamérica.
+                  </p>
+                  <p class="playlist__followers">1,131,650 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/dame-salsa.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Dame Salsa</p>
+                  <p class="playlist__description">
+                    ¡Quiero Salsa, dame Salsa! Josimar y Su Yambú
+                  </p>
+                  <p class="playlist__followers">175,315 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/funketon.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Funketon</p>
+                  <p class="playlist__description">
+                    Funk + Reggaeton Cover: Bad Bunny
+                  </p>
+                  <p class="playlist__followers">36,593 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/bachateame.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Bachatéame</p>
+                  <p class="playlist__description">
+                    ¡Esto sí es Bachata! Natti Natasha & Romeo
+                  </p>
+                  <p class="playlist__followers">120,721 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img
+                      src="./assets/playlists/mansion-reggaeton.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="playlist__title">Mansión Reggaeton</p>
+                  <p class="playlist__description">
+                    Los éxitos de reggaetón del momento.
+                  </p>
+                  <p class="playlist__followers">2,611,830 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/exitos.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Éxitos</p>
+                  <p class="playlist__description">
+                    Aquí están los hits más grandes del momento.
+                  </p>
+                  <p class="playlist__followers">23,720,224 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/hits-urbanos.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Hits Urbanos</p>
+                  <p class="playlist__description">
+                    Éxitos urbanos de Latinoamérica.
+                  </p>
+                  <p class="playlist__followers">1,131,650 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/dame-salsa.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Dame Salsa</p>
+                  <p class="playlist__description">
+                    ¡Quiero Salsa, dame Salsa! Josimar y Su Yambú
+                  </p>
+                  <p class="playlist__followers">175,315 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/funketon.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Funketon</p>
+                  <p class="playlist__description">
+                    Funk + Reggaeton Cover: Bad Bunny
+                  </p>
+                  <p class="playlist__followers">36,593 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/bachateame.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Bachatéame</p>
+                  <p class="playlist__description">
+                    ¡Esto sí es Bachata! Natti Natasha & Romeo
+                  </p>
+                  <p class="playlist__followers">120,721 SEGUIDORES</p>
+                </div>
+              </div>
+            </div>
+            <div class="list">
+              <div class="list__header">
+                <h2>Escuchado recientemente</h2>
+                <div class="list__header__arrows">
+                  <img id="left-arrow" src="./assets/left arrow.svg" alt="" />
+                  <img
+                    id="right-arrow"
+                    class="arrow--active"
+                    src="./assets/right arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="list__playlists">
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/labestia.png" alt="" />
+                  </div>
+                  <p class="playlist__title">La Bestia</p>
+                  <p class="playlist__description">
+                    Top Metal releases + snippet
+                  </p>
+                  <p class="playlist__followers">102,046 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalnuestro.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal del Nuestro</p>
+                  <p class="playlist__description">
+                    Metal hecho en Iberoamérica.
+                  </p>
+                  <p class="playlist__followers">190,557 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/kickass.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Kickass Metal</p>
+                  <p class="playlist__description">
+                    Lo mejor del Metal y flow actual.
+                  </p>
+                  <p class="playlist__followers">1,107,648 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/oldschoolmetal.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Old School Metal</p>
+                  <p class="playlist__description">
+                    ¡Quiero Metal, dame Metal!
+                  </p>
+                  <p class="playlist__followers">175,315 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalessentials.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal Essentials</p>
+                  <p class="playlist__description">
+                    Better to start with the essentials.
+                  </p>
+                  <p class="playlist__followers">257,277 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalempire.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal Empire</p>
+                  <p class="playlist__description">
+                    Metal tracks all the way from the birth of Metal.
+                  </p>
+                  <p class="playlist__followers">36,593 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/heavymetal.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Heavy Metal</p>
+                  <p class="playlist__description">
+                    Heavy Metal forever. From classics.
+                  </p>
+                  <p class="playlist__followers">120,721 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/labestia.png" alt="" />
+                  </div>
+                  <p class="playlist__title">La Bestia</p>
+                  <p class="playlist__description">
+                    Top Metal releases + snippet
+                  </p>
+                  <p class="playlist__followers">102,046 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalnuestro.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal del Nuestro</p>
+                  <p class="playlist__description">
+                    Metal hecho en Iberoamérica.
+                  </p>
+                  <p class="playlist__followers">190,557 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/kickass.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Kickass Metal</p>
+                  <p class="playlist__description">
+                    Lo mejor del Metal y flow actual.
+                  </p>
+                  <p class="playlist__followers">1,107,648 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/oldschoolmetal.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Old School Metal</p>
+                  <p class="playlist__description">
+                    ¡Quiero Metal, dame Metal!
+                  </p>
+                  <p class="playlist__followers">175,315 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalessentials.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal Essentials</p>
+                  <p class="playlist__description">
+                    Better to start with the essentials.
+                  </p>
+                  <p class="playlist__followers">257,277 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalempire.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal Empire</p>
+                  <p class="playlist__description">
+                    Metal tracks all the way from the birth of Metal.
+                  </p>
+                  <p class="playlist__followers">36,593 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/heavymetal.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Heavy Metal</p>
+                  <p class="playlist__description">
+                    Heavy Metal forever. From classics.
+                  </p>
+                  <p class="playlist__followers">120,721 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/labestia.png" alt="" />
+                  </div>
+                  <p class="playlist__title">La Bestia</p>
+                  <p class="playlist__description">
+                    Top Metal releases + snippet
+                  </p>
+                  <p class="playlist__followers">102,046 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalnuestro.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal del Nuestro</p>
+                  <p class="playlist__description">
+                    Metal hecho en Iberoamérica.
+                  </p>
+                  <p class="playlist__followers">190,557 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/kickass.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Kickass Metal</p>
+                  <p class="playlist__description">
+                    Lo mejor del Metal y flow actual.
+                  </p>
+                  <p class="playlist__followers">1,107,648 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/oldschoolmetal.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Old School Metal</p>
+                  <p class="playlist__description">
+                    ¡Quiero Metal, dame Metal!
+                  </p>
+                  <p class="playlist__followers">175,315 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalessentials.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal Essentials</p>
+                  <p class="playlist__description">
+                    Better to start with the essentials.
+                  </p>
+                  <p class="playlist__followers">257,277 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/metalempire.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Metal Empire</p>
+                  <p class="playlist__description">
+                    Metal tracks all the way from the birth of Metal.
+                  </p>
+                  <p class="playlist__followers">36,593 SEGUIDORES</p>
+                </div>
+                <div class="playlist">
+                  <div class="playlist__cover">
+                    <div class="playlist__button"></div>
+                    <img src="./assets/playlists/heavymetal.png" alt="" />
+                  </div>
+                  <p class="playlist__title">Heavy Metal</p>
+                  <p class="playlist__description">
+                    Heavy Metal forever. From classics.
+                  </p>
+                  <p class="playlist__followers">120,721 SEGUIDORES</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trackbar">TRACK</div>
     </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
