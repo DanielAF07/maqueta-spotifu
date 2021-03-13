@@ -417,7 +417,7 @@ html {
 }
 
 .current-song__name::after {
-    content: url(/assets/Polygon\ 1\ \(Stroke\).svg);
+    content: url("../../assets/heart.svg");
     position: relative;
     filter: invert(1);
     left: 10px;
