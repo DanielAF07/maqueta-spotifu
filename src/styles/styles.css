@@ -6,10 +6,22 @@
     --grey: #7D7D7D;
 }
 
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../../assets/fonts/ProximaNova-Regular.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../../assets/fonts/Proxima\ Nova\ Bold.otf');
+    font-weight: bold;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: avenir;
+    font-family: 'Proxima Nova', arial;
     color: white;
     width: 100vw;
     height: 100%;
@@ -475,24 +487,28 @@ input[type=range] {
     -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
     width: 100%; /* Specific width is required for Firefox. */
     background: transparent; /* Otherwise white in Chrome */
+    overflow: hidden;
   }
   
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
+    
 }
 
 input[type=range]:focus {
     outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+
 }
 
 input[type=range]::-ms-track {
     width: 100%;
     cursor: pointer;
-
+    
     /* Hides the slider so custom styles can be added */
     background: transparent; 
     border-color: transparent;
     color: transparent;
+    
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -505,6 +521,7 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
     margin-top: -3px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+    box-shadow: -800px 0px 0px 800px var(--primary);
 }
 
 .progressbar {
@@ -521,10 +538,21 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
-    height: 4px;
+    height: 5px;
     cursor: pointer;
     /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
     background: rgb(56,56,56);
     border-radius: 1.3px;
     /* border: 0.2px solid #010101; */
-  }
+}
+
+.iplaylist__header {
+    border: 1px solid red;
+    
+}
+
+.iplaylist__image {
+    width: 100%;
+    margin-top: -160px;
+    object-fit: cover;
+}
