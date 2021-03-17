@@ -307,6 +307,7 @@ html {
 
 .playlist {
     width: 166px;
+    margin-bottom: 8px;
 }
 
 .playlist__cover {
