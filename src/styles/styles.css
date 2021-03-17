@@ -363,11 +363,12 @@ html {
 
 .playlist__button:before {
     content: '\25BA';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 3px;
+    top: 2px;
     left: 4px;
 }
 
